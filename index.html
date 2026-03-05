@@ -1,77 +1,297 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajay Kumar | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajay Kumar | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#020617;
+}
+
+nav h1{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero Section */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin:20px 0;
+color:#cbd5f5;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+/* About */
+
+.about{
+padding:80px;
+background:#020617;
+text-align:center;
+}
+
+.about h2{
+margin-bottom:20px;
+font-size:32px;
+color:#38bdf8;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+color:#cbd5f5;
+}
+
+/* Skills */
+
+.skills{
+padding:80px;
+text-align:center;
+}
+
+.skills h2{
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.skill-box{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.skill{
+background:#020617;
+padding:25px;
+border-radius:10px;
+width:150px;
+}
+
+/* Projects */
+
+.projects{
+padding:80px;
+background:#020617;
+text-align:center;
+}
+
+.project-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.project{
+background:#0f172a;
+padding:20px;
+border-radius:10px;
+width:250px;
+}
+
+/* Contact */
+
+.contact{
+padding:80px;
+text-align:center;
+}
+
+.contact h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+
 </head>
+
 <body>
 
-```
-<!-- Header -->
-<header>
-    <h1>Ajay Kumar</h1>
-    <p>Java Developer | DevOps Learner</p>
-</header>
+<!-- Navbar -->
 
-<hr>
+<nav>
+<h1>Ajay</h1>
 
-<!-- About Section -->
-<section>
-    <h2>About Me</h2>
-    <p>
-        Hello! My name is Ajay Kumar. I am a Java Developer with 1.5 years of experience.
-        Currently I am learning DevOps tools like Docker, CI/CD, and AWS.
-    </p>
-</section>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
 
-<hr>
+</nav>
 
-<!-- Skills Section -->
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>Spring Boot</li>
-        <li>Docker</li>
-        <li>AWS EC2</li>
-        <li>Git & GitHub</li>
-        <li>Linux</li>
-    </ul>
-</section>
+<!-- Hero -->
 
-<hr>
+<section class="hero">
 
-<!-- Projects Section -->
-<section>
-    <h2>Projects</h2>
+<div class="hero-text">
 
-    <h3>Docker Nginx Deployment</h3>
-    <p>Created a custom Docker image and deployed Nginx using Docker Compose on AWS EC2.</p>
+<h2>Hello, I'm <span>Ajay Kumar</span></h2>
 
-    <h3>DevOps 90 Days Challenge</h3>
-    <p>Learning DevOps tools step-by-step including Linux, Shell Script, Docker, CI/CD.</p>
+<p>
+Java Developer with experience in backend development and DevOps learning.
+Passionate about building scalable applications and automation.
+</p>
+
+<a href="#" class="btn">Download Resume</a>
+
+</div>
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="250">
 
 </section>
 
-<hr>
+<!-- About -->
 
-<!-- Contact Section -->
-<section>
-    <h2>Contact</h2>
-    <p>Email: ajay@example.com</p>
-    <p>GitHub: github.com/ajaykumar</p>
-    <p>LinkedIn: linkedin.com/in/ajaykumar</p>
+<section class="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Java developer with 1.5 years of experience working with modern technologies.
+Currently learning Docker, AWS, CI/CD and DevOps practices.
+I love building projects and improving my development skills.
+</p>
+
 </section>
 
-<hr>
+<!-- Skills -->
 
-<!-- Footer -->
+<section class="skills">
+
+<h2>Skills</h2>
+
+<div class="skill-box">
+
+<div class="skill">Java</div>
+<div class="skill">Spring Boot</div>
+<div class="skill">Docker</div>
+<div class="skill">AWS</div>
+<div class="skill">Git</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section class="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Docker Project</h3>
+<p>Deployed nginx container using docker compose.</p>
+</div>
+
+<div class="project">
+<h3>AWS EC2 Setup</h3>
+<p>Installed Docker and deployed application.</p>
+</div>
+
+<div class="project">
+<h3>CI/CD Pipeline</h3>
+<p>Automated build and deployment pipeline.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: ajay@example.com</p>
+<p>GitHub: github.com/ajay</p>
+
+</section>
+
 <footer>
-    <p>© 2026 Ajay Kumar</p>
+
+<p>© 2026 Ajay Kumar | Portfolio</p>
+
 </footer>
-```
 
 </body>
 </html>
