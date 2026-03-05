@@ -1,3 +1,4 @@
+---
 name: Hello 
 
 on:
@@ -5,12 +6,11 @@ on:
     branches: [master, main]     
 
 jobs:
-
   greet:
-    run-on: ubuntu-latest
-    steps:
-      - name: say hello users
-        run: echo "Hello Dosto."
+     run-on: ubuntu-latest
+     steps:
+       - name: say hello users
+         run: echo "Hello Dosto."
 
-      - name: say hello username
-        run: echo "Hello $USER."
+       - name: say hello username
+         run: echo "Hello $USER."
