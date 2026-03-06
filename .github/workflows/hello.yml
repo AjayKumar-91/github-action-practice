@@ -20,7 +20,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Print Hello
+      - name: Say Hello
         run: echo "Hello from GitHub Actions!"
 
       - name: Print Date and Time
@@ -46,5 +46,6 @@ jobs:
     steps:
       - name: version docker and python 
         run: docker --version && python --version
+
 
 
