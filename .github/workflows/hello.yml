@@ -1,4 +1,4 @@
-name: Hello Ajay
+name: Hello Workflow
 
 # runs on an automatic trigger, whenever change is pushed to branch (deployment)
 on: 
@@ -16,6 +16,13 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions!"
+        
       - name: say hello users
         run: echo "Hello Dosto."
 
@@ -27,3 +34,4 @@ jobs:
     steps:
       - name: version docker and python 
         run: docker --version && python --version
+
